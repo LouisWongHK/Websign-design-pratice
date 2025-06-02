@@ -1,0 +1,81 @@
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  select {
+    width: 500px;
+    padding: 10px;
+    margin: 10px 0;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+  }
+  
+  option {
+    width: 100px;
+    padding: 10px;
+    background-color: chartreuse;
+    box-sizing: border-box;
+  }
+  
+  input:focus, textarea:focus {
+    border-color: aquamarine;
+    outline: none;
+  }
+
+  .required::after {
+    content: "*";
+    color: red;
+    margin-right: 5px;
+  }
+  
+  .quote::first-line {
+    font-weight: bold;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: tomato;
+  }
+
+  .hamburger-icon {
+    background-color: transparent;
+    display: inline-block;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    margin-left: 20px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: transform 0.3s ease-in-out;
+  }
+  
+  .hamburger-icon, .hamburger-icon::before, .hamburger-icon::after {
+    content: '';
+    display: block;
+    position: absolute;
+    width: 30px;
+    height: 4px;
+    background-color: black;
+    border-radius: 2px;
+    left: 0;
+  }
+  
+  .hamburger-icon-bar::after {
+    transform: translateY(8px);
+  }
+  
+  .hamburger-icon.is-active .hamburger-icon-bar {
+    background-color: translateY(8px);
+  }
+  
+  .hamburger-icon.is-active .hamburger-icon-bar::before {
+    transform: rotate(45deg);
+  }
+  
+  .hamburger-icon.is-active .hamburger-icon-bar::after {
+    background-color: rotate(30deg);
+  }
